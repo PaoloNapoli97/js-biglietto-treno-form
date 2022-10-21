@@ -20,6 +20,8 @@ btnSubmit.addEventListener('click' , function() {
         document.getElementById('ticket-type').innerHTML = "Biglietto Standard";
     }
 
+    var name = person;
+
     const numberRandom = Math.floor(Math.random() * 10) + 1;
     const numberRandomCP = Math.floor(Math.random() * 999) + 9000;
 
@@ -33,7 +35,7 @@ btnSubmit.addEventListener('click' , function() {
         document.getElementById('pricefix').innerHTML = pricefix;
         document.getElementById('wagon').innerHTML = numberRandom;
         document.getElementById('cp-gen').innerHTML = numberRandomCP;
-        document.getElementById('person').innerHTML = person;
+        document.getElementById('name').innerHTML = name;
         document.getElementById('ticket').style.display = "block";
     }      
 });
