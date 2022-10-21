@@ -35,13 +35,29 @@
 }
 
 .buttons{
-    padding-top: 20px;
+    padding: 20px 0;
 }
 
 
 .area-biglietto{
+    display: none;
     background-color: white;
     width: 70%;
     margin: auto;
     color: black;
+}
+
+.nome{
+    width: 30%;
+    background-color: gray;
+}
+
+.col-small{
+    width: 17.5%;
+}
+
+.ticket{
+    display: flex;
+    border-top: solid 1px gray;
+    border-bottom: solid 1px gray;
 }

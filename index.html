@@ -33,15 +33,31 @@
             </div>
             <div class="buttons text-center">
                 <button type="button" id="btnSubmit">Genera</button>
-                <button type="button">Annulla</button>
+                <button type="button" id="btnRefresh">Annulla</button>
             </div>
         </div>
-        <div class="area-biglietto">
-            <h4>DETTAGLIO PASSEGGERI</h4>
+        <div class="area-biglietto" id="ticket">
+            <h3>DETTAGLIO PASSEGGERI</h3>
             <div class="ticket">
-                <div class="nome"></div>
-                <div class="offerta"></div>
-                <div class="carrozza"></div>
+                <div class="nome">
+                    <h4>NOME PASSEGGERO <br> <span id="person"></span></h4>
+                </div>
+                <div class="offerta text-center col-small">
+                    <h5>Offerta</h5>
+                    <p id="ticket-type"></p>
+                </div>
+                <div class="carrozza col-small text-center">
+                    <h5>Carrozza</h5>
+                    <p id="wagon"></p>
+                </div>
+                <div class="codice col-small text-center">
+                    <h5>Codice CP</h5>
+                    <p id="cp-gen"></p>
+                </div>
+                <div class="costo col-small text-center">
+                    <h5>Costo Biglietto</h5>
+                    <p id="pricefix"></p>
+                </div>
             </div>
         </div>
     </div>

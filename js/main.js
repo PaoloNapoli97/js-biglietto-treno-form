@@ -10,15 +10,35 @@ btnSubmit.addEventListener('click' , function() {
 
     if(document.getElementById('selectage').value == "minorenne"){
         price = price * ( (100 - 20) / 100);
+        document.getElementById('ticket-type').innerHTML = "Biglietto Minorenni";
     }
     else if(document.getElementById('selectage').value == "over_65"){
         price =  price * ( (100 - 40) / 100);
+        document.getElementById('ticket-type').innerHTML = "Biglietto Over 65";
+    }
+    else{
+        document.getElementById('ticket-type').innerHTML = "Biglietto Standard";
     }
 
+    const numberRandom = Math.floor(Math.random() * 10) + 1;
+    const numberRandomCP = Math.floor(Math.random() * 999) + 9000;
 
 
     const pricefix = price.toFixed(2);
     console.log("Costo biglietto: " , pricefix);
-    document.querySelector("h4").innerHTML = pricefix;
+    if(km == 0 ){
+        document.getElementById('ticket').style.display = "none";
+    }
+    else{
+        document.getElementById('pricefix').innerHTML = pricefix;
+        document.getElementById('wagon').innerHTML = numberRandom;
+        document.getElementById('cp-gen').innerHTML = numberRandomCP;
+        document.getElementById('person').innerHTML = person;
+        document.getElementById('ticket').style.display = "block";
+    }      
+});
+
+btnRefresh.addEventListener('click', function() {
+    window.location.reload();
 });
 
