@@ -1,0 +1,47 @@
+.container{
+    padding: 10px;
+    color: white;
+    width: 60%;
+    background-color: rgb(102, 0, 5);
+    border-radius: 10px;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.area{
+    background-color: white;
+    width: 70%;
+    margin: auto;
+    border-radius: 10px;
+    color: black;
+
+    margin-bottom: 1.25rem;
+}
+
+.row{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.col{
+    padding: 0 20px;
+}
+
+.col h3{
+    color: rgb(102, 0, 5);
+}
+
+.buttons{
+    padding-top: 20px;
+}
+
+
+.area-biglietto{
+    background-color: white;
+    width: 70%;
+    margin: auto;
+    color: black;
+}
