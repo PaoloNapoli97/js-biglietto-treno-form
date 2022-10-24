@@ -1,10 +1,10 @@
 
 
 btnSubmit.addEventListener('click' , function() {
-    var km = document.getElementById('km').value;
+    const km = document.getElementById('km').value;
     console.log("Numero chilometri da percorrere: " , km);
-    var person = document.getElementById('person').value;
-    console.log("Nome e cognome passggero: " , person);
+    const name = document.getElementById('person').value;
+    console.log("Nome e cognome passggero: " , name);
     const age = document.getElementById('selectage').value;
     document.getElementById('ticket-type').innerHTML = "Biglietto Standard";
 
@@ -19,15 +19,13 @@ btnSubmit.addEventListener('click' , function() {
         document.getElementById('ticket-type').innerHTML = "Biglietto Over 65";
     }
 
-    var name = person;
-
     const numberRandom = Math.floor(Math.random() * 10) + 1;
     const numberRandomCP = Math.floor(Math.random() * 999) + 9000;
 
 
     const pricefix = price.toFixed(2);
     console.log("Costo biglietto: " , pricefix);
-    if(km == 0 ){
+    if(km == 0){
         document.getElementById('ticket').style.display = "none";
     }
     else{
