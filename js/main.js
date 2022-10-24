@@ -5,19 +5,18 @@ btnSubmit.addEventListener('click' , function() {
     console.log("Numero chilometri da percorrere: " , km);
     var person = document.getElementById('person').value;
     console.log("Nome e cognome passggero: " , person);
+    const age = document.getElementById('selectage').value;
+    document.getElementById('ticket-type').innerHTML = "Biglietto Standard";
 
     let price = 0.21 * km;
 
-    if(document.getElementById('selectage').value == "minorenne"){
+    if(age == "minorenne"){
         price = price * ( (100 - 20) / 100);
         document.getElementById('ticket-type').innerHTML = "Biglietto Minorenni";
     }
-    else if(document.getElementById('selectage').value == "over_65"){
+    else if(age == "over_65"){
         price =  price * ( (100 - 40) / 100);
         document.getElementById('ticket-type').innerHTML = "Biglietto Over 65";
-    }
-    else{
-        document.getElementById('ticket-type').innerHTML = "Biglietto Standard";
     }
 
     var name = person;
